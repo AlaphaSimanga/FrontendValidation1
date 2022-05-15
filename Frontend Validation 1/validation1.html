@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/validation1.css">
+</head>
+
+<body>
+    <h1>Form</h1>
+    <form action="#" onsubmit="myValidation()">
+
+
+        <label for="newTask">New Task:</label>
+        <input type="text" name="newTask" id="newTask" Required>
+        <p id="errorText">Please make sure your task contains no HTML characters</p>
+
+
+
+        <br>
+
+
+        <label for="description">Description:</label>
+        <textArea name="Description" id="description"></textArea>
+
+
+        <br>
+
+        <label for="date">Due Date:</label>
+        <input type="date" name="Date" id="date" Required>
+
+
+        <br>
+
+        <label for="time">Due Time:</label>
+        <input type="time" name="Time" id="time" Required>
+
+
+        <br>
+
+        <input type="submit" value="submit">
+
+    </form>
+
+    <ul id="taskList"></ul>
+
+    <script src="js/validation1.js"></script>
+</body>
+
+</html>
